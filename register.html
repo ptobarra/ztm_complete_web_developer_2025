@@ -6,21 +6,56 @@
 </head>
 
 <body>
-    <form>
-        First Name: <input type="text"><br><br>
-        Last Name: <input type="text"><br><br>
-        Email: <input type="email" required><br><br>
-        Birthday: <input type="date"><br><br>
+    <form method="GET">
+        <!-- <form method="POST" action="action.php"> -->
+        First Name: <input type="text" name="firstname"><br><br>
+        Last Name: <input type="text" name="lastname"><br><br>
+        Email: <input type="email" name="email" required><br><br>
+        Password: <input type="password" name="password" min="5"><br><br>
+        Birthday: <input type="date" name="birthday"><br><br>
         Gender:<br>
-        <input type="radio" name="gender">Male<br>
-        <input type="radio" name="gender">Female<br>
-        <input type="radio" name="gender">Other<br><br>
+        <input type="radio" name="male" value="Male">Male<br>
+        <input type="radio" name="female" value="Female">Female<br>
+        <input type="radio" name="other" value="Other">Other<br><br>
         Pets: <br>
-        <input type="checkbox"> Cats<br>
-        <input type="checkbox"> Dogs<br><br>
+        <input type="checkbox" name="cat"> Cat<br>
+        <input type="checkbox" name="dog"> Dog<br><br>
+        Cars: <br>
+        <!-- <select size="4">     -->
+        <select name="cars" multiple size="4">
+            <option value="Volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+            <option value="BMW">BMW</option>
+        </select><br><br>
         <input type="submit" value="Register!">
         <input type="reset"><br><br>
     </form>
 </body>
 
 </html>
+
+<!-- QUERY STRING EXAMPLE:
+file:///c%3A/Users/ptoba/OneDrive/zero%20to%20mastery%2020221030/ztm_complete_web_developer_2025/register.html
+?firstname=fake
+&lastname=man
+&email=fake%40gmail.com
+&password=123
+&birthday=2025-04-22
+&male=Male
+&cat=on
+&cars=Volvo -->
+
+<!-- WITH THE 'GET' METHOD, THE DATA IS SENT IN THE URL AS A QUERY STRING.
+file:///c%3A/Users/ptoba/OneDrive/zero%20to%20mastery%2020221030/ztm_complete_web_developer_2025/register.html
+?firstname=fake
+&lastname=man
+&email=fake%40gmail.com # %40 is the encoded version of '@' in URL encoding
+&password=123
+&birthday=2025-04-22
+&male=Male
+&cat=on
+&cars=Volvo -->
+
+<!-- WITH THE 'POST' METHOD, THE DATA IS SENT IN THE BODY OF THE REQUEST.
+file:///c%3A/Users/ptoba/OneDrive/zero%20to%20mastery%2020221030/ztm_complete_web_developer_2025/register.html -->
