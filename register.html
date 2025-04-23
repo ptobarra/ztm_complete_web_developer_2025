@@ -6,31 +6,50 @@
 </head>
 
 <body>
-    <form method="GET">
-        <!-- <form method="POST" action="action.php"> -->
-        First Name: <input type="text" name="firstname"><br><br>
-        Last Name: <input type="text" name="lastname"><br><br>
-        Email: <input type="email" name="email" required><br><br>
-        Password: <input type="password" name="password" min="5"><br><br>
-        Birthday: <input type="date" name="birthday"><br><br>
-        Gender:<br>
-        <input type="radio" name="male" value="Male">Male<br>
-        <input type="radio" name="female" value="Female">Female<br>
-        <input type="radio" name="other" value="Other">Other<br><br>
-        Pets: <br>
-        <input type="checkbox" name="cat"> Cat<br>
-        <input type="checkbox" name="dog"> Dog<br><br>
-        Cars: <br>
-        <!-- <select size="4">     -->
-        <select name="cars" multiple size="4">
-            <option value="Volvo">Volvo</option>
-            <option value="Audi">Audi</option>
-            <option value="Mercedes">Mercedes</option>
-            <option value="BMW">BMW</option>
-        </select><br><br>
-        <input type="submit" value="Register!">
-        <input type="reset"><br><br>
-    </form>
+    <header>
+        <h1>Register</h1>
+    </header>
+    <nav>
+        <a href="https://www.google.com/">Google</a><br>
+    </nav>
+    <footer>
+        <p>Website made with love</p>
+    </footer>
+    <span></span>
+    <!-- span is the same thing as div, but span is an inline element. div is a block element -->
+    <!-- div is used to wrap the form and divide the content in different sections for css styles -->
+    <div>
+        <!-- Use GET, not POST -->
+        <form method="GET">
+            <!-- <form method="POST" action="action.php"> -->
+            <span>First Name: </span><input type="text" name="firstname"><br><br>
+            Last Name: <input type="text" name="lastname"><br><br>
+            Email: <input type="email" name="email" required><br><br>
+            Password: <input type="password" name="password" min="5"><br><br>
+            Birthday: <input type="date" name="birthday"><br><br>
+            Gender:<br>
+            <input type="radio" name="male" value="Male">Male<br>
+            <input type="radio" name="female" value="Female">Female<br>
+            <input type="radio" name="other" value="Other">Other<br><br>
+            Pets: <br>
+            <input type="checkbox" name="cat"> Cat<br>
+            <input type="checkbox" name="dog"> Dog<br><br>
+            Cars: <br>
+            <!-- <select size="4">     -->
+            <select name="cars" multiple size="4">
+                <option value="Volvo">Volvo</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedes">Mercedes</option>
+                <option value="BMW">BMW</option>
+            </select><br><br>
+            <input type="submit" value="Register!">
+            <input type="reset"><br><br>
+        </form>
+    </div>
+
+    <a href="index.html">
+        <h2>Go Back</h2>
+    </a>
 </body>
 
 </html>
