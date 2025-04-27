@@ -2,17 +2,26 @@
     Property: value;
 } */
 
+/* '*' is used to select all elements in the document. */
+* {
+    text-align: right;
+}
+
+/* element */
 body {
     background-image: url(ferrari_white.jpg);
     background-size: cover;
 }
 
 li {
+    color: rgb(255, 255, 255);
     list-style: none;
     display: inline-block;
 }
 
-h2 {
+/* element, element */
+h2,
+p {
     /* color: red; */
     color: #AE0E0E;
     text-align: center;
@@ -25,10 +34,72 @@ h2 {
     cursor: pointer;
 }
 
+/* element element: i wnat to select a child element 'all p' inside a parent element 'all h2 */
+h2 p {
+    color: #881010;
+    text-align: right;
+    border: 2px solid rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+/* i want to select all paragraphs 'p' inside a parent elements 'h2' */
+h2>p {
+    color: #881010;
+    text-align: left;
+    border: 2px solid rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+/* Use 'element element' when you want to style all elements nested within another element, regardless of how deeply they are nested.
+Use 'element > element' when you want to style only the immediate children of another element. */
+
+/* h2+p is used to select all paragraphs that are immediately after an h2 element. *
+/* hover is used to apply styles when the user hovers over the element. */
+h2+p:hover {
+    color: #000000;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
 p {
     color: pink;
+    /* color: pink !important; */
+    /* the !important selector overrides the rules for cascading style sheets for this element and property. all 'p' elements will be pink */
 }
 
 p {
     color: green;
 }
+
+/* The CSS will read the last line of the same property. */
+
+.webtext {
+    border: 5px dashed green;
+}
+
+/* the style below only applies to the first element of the class */
+.webtext:first-child {
+    border: 5px solid rgb(223, 106, 106);
+}
+
+/* the style below only applies to the last element of the class */
+.webtext:last-child {
+    border: 5px dashed rgb(223, 106, 106);
+}
+
+.active {
+    color: red;
+}
+
+#div1 {
+    /* background: blue; */
+    background: rgba(0, 0, 255, 0.2);
+    /* opacity: 0.2; */
+}
+
+#div2 {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+/* inline styles will alsways win over other styles */

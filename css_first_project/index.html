@@ -3,6 +3,8 @@
 
 <head>
     <title>CSS</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <!-- according to the css file and the CSS selectors source order, the 'style2.css' is not used in this file. -->
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- <style>
         li {
@@ -25,8 +27,26 @@
         </nav>
     </header>
     <section>
-        <h2>Home</h2>
-        <p>Lorem ipsum.</p>
+        <h2>Home
+            <p>homegnome - 'h2 p'</p>
+            <div>
+                <p>homegnome_div - 'h2>p'</p>
+            </div>
+        </h2>
+        <p>homegnome - 'h2 + p'</p>
+        <!-- 'div' is like 'class' but but 'id' can only be used once in a page. -->
+        <div id="div1">
+            <p class="webtext active">Lorem ipsum.</p>
+            <p class="webtext">Lorem ipsum.</p>
+            <p class="webtext">Lorem ipsum.</p>
+            <p class="webtext">Lorem ipsum.</p>
+        </div>
+        <div id="div2">
+            <p class="webtext active">Lorem ipsum.</p>
+            <p class="webtext">Lorem ipsum.</p>
+            <p class="webtext">Lorem ipsum.</p>
+            <p class="webtext">Lorem ipsum.</p>
+        </div>
     </section>
 </body>
 
