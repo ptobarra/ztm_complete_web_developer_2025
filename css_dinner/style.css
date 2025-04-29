@@ -1,0 +1,196 @@
+/* select the plates */
+plate {
+    /* Add your styles here */
+    background-color: yellow;
+}
+
+/* select the bento boxes */
+bento {
+    /* Add your styles here */
+    background-color: lightblue;
+}
+
+/* select the fancy place */
+#fancy {
+    /* Add your styles here */
+    background-color: gold;
+}
+
+/* select the apple on the plate */
+plate apple {
+    /* Add your styles here */
+    background-color: red;
+}
+
+/* select the pickle on the fancy plate */
+#fancy pickle {
+    /* Add your styles here */
+    background-color: green;
+}
+
+/* select the small apples */
+apple.small {
+    /* Add your styles here */
+    background-color: pink;
+}
+
+/* select the small oranges */
+orange.small {
+    /* Add your styles here */
+    background-color: orange;
+}
+
+/* select the small oranges in the bentos */
+bento orange.small {
+    /* Add your styles here */
+    background-color: lightorange;
+}
+
+/* select all the plates and the bentos */
+plate,
+bento {
+    /* Add your styles here */
+    background-color: lightyellow;
+}
+
+/* select all the elements in the CSS */
+* {
+    /* Add your styles here */
+    background-color: lightgray;
+}
+
+/* select everything on a plate */
+plate * {
+    /* Add your styles here */
+    background-color: lightgreen;
+}
+
+/* select every apple that is next to a plate */
+plate+apple {
+    /* Add your styles here */
+    background-color: lightcoral;
+}
+
+/* select the pickles beside the bento */
+bento~pickle {
+    /* Add your styles here */
+    background-color: lightpink;
+}
+
+/* select the apple directly on a plate */
+plate>apple {
+    /* Add your styles here */
+    background-color: lightblue;
+}
+
+/* select the top orange */
+orange:first-child {
+    /* Add your styles here */
+    background-color: lightyellow;
+}
+
+/* select the apple and the pickle on the plate */
+plate apple,
+plate pickle {
+    /* Add your styles here */
+    background-color: lightpurple;
+}
+
+/* select the small apple and the small pickle */
+apple.small,
+pickle.small {
+    /* Add your styles here */
+    background-color: lightcyan;
+}
+
+/* select the third plate */
+plate:nth-child(3) {
+    /* Add your styles here */
+    background-color: lightgray;
+}
+
+/* select the first bento */
+bento:first-of-type {
+    /* Add your styles here */
+    background-color: lightgreen;
+}
+
+/* select the first apple */
+apple:first-of-type {
+    /* Add your styles here */
+    background-color: lightpink;
+}
+
+/* select all even plates */
+plate:nth-child(even) {
+    /* Add your styles here */
+    background-color: lightblue;
+}
+
+/* select every second plate, starting from the third */
+plate:nth-child(2n+3) {
+    /* Add your styles here */
+    background-color: lightyellow;
+}
+
+/* select the apple on the second plate */
+plate:nth-of-type(2) apple {
+    /* Add your styles here */
+    background-color: lightcoral;
+}
+
+/* select the last apple and orange */
+apple:last-of-type,
+orange:last-of-type {
+    /* Add your styles here */
+    background-color: lightgreen;
+}
+
+/* select the empty bentos */
+bento:empty {
+    /* Add your styles here */
+    background-color: lightgray;
+}
+
+/* select not small apple */
+apple:not(.small) {
+    /* Add your styles here */
+    background-color: lightpink;
+}
+
+/* select the items with the 'for' attribute */
+[for] {
+    /* Add your styles here */
+    background-color: lightblue;
+}
+
+/* select the plates wit the attribute 'for' */
+plate[for] {
+    /* Add your styles here */
+    background-color: lightyellow;
+}
+
+
+/* select all elements with attribute for="Alice" */
+[for="Alice"] {
+    /* Add your styles here */
+    background-color: lightgreen;
+}
+
+/* select all elements with attributes for starting with "Sa" */
+[for^="Sa"] {
+    /* Add your styles here */
+    background-color: lightblue;
+}
+
+/* select all elements with attributes for ending in "ato" */
+[for$="ato"] {
+    /* Add your styles here */
+    background-color: lightyellow;
+}
+
+/* select all elements with attributes for containing "obb" */
+[for*="obb"] {
+    /* Add your styles here */
+    background-color: lightgreen;
+}
