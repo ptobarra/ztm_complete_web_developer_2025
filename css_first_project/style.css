@@ -63,7 +63,14 @@ Use 'element > element' when you want to style only the immediate children of an
 /* h2+p is used to select all paragraphs that are immediately after an h2 element. *
 /* hover is used to apply styles when the user hovers over the element. */
 /* h2+p:hover { */
-h2+p {
+/* h2+p {
+    color: #000000;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+} */
+
+p {
     color: #000000;
     text-align: center;
     border: 2px solid rgb(0, 0, 0);
@@ -80,10 +87,21 @@ p {
     line-height: 50px;
     font-style: italic;
     font-weight: bold;
-    font-size: 180%;
+    font-size: 100%;
     /* font-family: Georgia; */
     /* font-family: 'Times New Roman', Georgia; */
     font-family: 'Poiret One', cursive;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    float: right;
+}
+
+footer {
+    text-align: center;
+    clear: both;
 }
 
 p {
