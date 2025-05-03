@@ -1,3 +1,37 @@
 h2 {
     color: blue;
 }
+
+.boxmodel {
+    /* context <- padding <- border <- margin */
+    border: 5px solid red;
+    display: inline-block;
+
+    /* padding: 20px; */
+    /* padding: 5px 20px 5px 20px; */
+    padding: 5px 20px;
+    /* padding-bottom: ; */
+
+    /* margin allows for spacing outside the element's border. It creates space between the element and its surrounding elements. */
+    /* margin: 20px; */
+    /* margin: 0px 20px 0px 20px; */
+    margin: 0px 20px;
+
+    /* content */
+    width: 33px;
+    height: 55px;
+}
+
+p {
+    /* font-size: 20px; */
+    font-size: 5px;
+}
+
+/* we want the size of the span element to be 5em, which is 5 times the size of the font in the containing element. 'p' 20px. */
+span {
+    /* font-size: 5em; */
+    /* font-size: 100px; */
+    /* font-size: 2em; */
+    /* rem means root em, which is relative to the font size of the root element (usually the <html> element). */
+    font-size: 5rem;
+}
