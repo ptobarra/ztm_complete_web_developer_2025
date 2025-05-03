@@ -1,3 +1,10 @@
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
 /* Selector {
     Property: value;
 } */
@@ -55,7 +62,8 @@ Use 'element > element' when you want to style only the immediate children of an
 
 /* h2+p is used to select all paragraphs that are immediately after an h2 element. *
 /* hover is used to apply styles when the user hovers over the element. */
-h2+p:hover {
+/* h2+p:hover { */
+h2+p {
     color: #000000;
     text-align: center;
     border: 2px solid rgb(0, 0, 0);
@@ -63,9 +71,19 @@ h2+p:hover {
 }
 
 p {
-    color: pink;
-    /* color: pink !important; */
+    /* color: pink; */
+    color: pink !important;
     /* the !important selector overrides the rules for cascading style sheets for this element and property. all 'p' elements will be pink */
+    text-decoration: underline;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 180%;
+    /* font-family: Georgia; */
+    /* font-family: 'Times New Roman', Georgia; */
+    font-family: 'Poiret One', cursive;
 }
 
 p {
