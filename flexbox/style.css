@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -13,6 +17,15 @@ h1 {
     font-weight: normal;
     /* Unbold the text */
     text-align: center;
+    /* Add a shadow to the text: below for experimental features on browsers that support it.
+    -moz-box-shadow: 4px 4px 5px #888888; # Firefox 3.5+
+    -ms-box-shadow: 4px 4px 5px #888888; # IE 9+
+    -webkit-box-shadow: 4px 4px 5px #888888; # Safari 3.0+ and Chrome 4.0+
+    -o-box-shadow: 4px 4px 5px #888888; # Opera 10.5+ */
+    box-shadow: 4px 4px 5px #888888;
+    margin: 10px 0px 10px 0px;
+    margin-top: 10px;
+    /* Add a margin of 10px on top and bottom, and 0px on left and right */
 }
 
 
@@ -20,4 +33,12 @@ img {
     width: 450px;
     height: 300px;
     margin: 10px;
+    transition: all 1s;
+    /* Smooth transition for all properties over 1 second when an action occurs on the image */
+}
+
+img:hover {
+    transform: scale(1.1);
+    /* Scale the image to 110% on hover: CSS3 */
+
 }
